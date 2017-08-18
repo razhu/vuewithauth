@@ -17,7 +17,12 @@ const store = new Vuex.Store({
   mutations: {
     setMain (state, value) {
       state.main = value;
-    }
+    },
+    setDefault (state) {
+      state.auth = false;
+      state.menu = {};
+      state.user = {};
+    },
   },
   actions: {
 
