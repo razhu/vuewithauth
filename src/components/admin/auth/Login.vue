@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     submit () {
-      console.log("this.form ", this.form)
       this.login(this.form);
     }
   },
