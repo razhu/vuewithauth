@@ -35,7 +35,6 @@ export default {
   watch: {
     '$route' (to, from) {
       if (!this.$storage.existUser()) {
-        console.log('aaaaaaaaaaaaaaaaaaa')
         this.logout();
       } 
     }
