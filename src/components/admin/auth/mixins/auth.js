@@ -27,7 +27,8 @@ export default {
           }
           this.$router.push(data.redirect || '/');
         }
-      }).catch(() => {
+      }).catch((err) => {
+        console.log('errorrrr ', err)
         this.$message.error('Usuario y/o contraseña inválida');
       });
     },
